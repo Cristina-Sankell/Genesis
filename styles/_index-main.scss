@@ -1,0 +1,153 @@
+.main {
+    width: 80%;
+    max-width: $content-width;
+}
+
+//main__intro
+
+.main__intro {
+    width: 100%;
+    padding-top: 3%;
+    @include space-between;
+
+    .main__intro-text {
+        max-width: 630px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-title {
+    @include title-large;
+    color: $color-blue;
+}
+
+.main-text {
+    @include text-large;
+
+    .text--blue {
+        color: $color-blue;
+    }
+}
+
+.main__intro-quote {
+    width: 40%;
+    padding: 0 0 3.5% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .quote__line {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        font-weight: 100;
+        color: $color-transparent;
+    }
+
+    .quote {
+        @include quote;
+    }
+}
+
+// main__images
+
+.main__images {
+    width: 100%;
+    padding-top: 8%;
+    @include space-between;
+
+    .main__images-column {
+        width: 33%;
+        @include center-content;
+        justify-content: flex-start;
+
+        .image {
+            max-width: 100%;
+            padding-top: 5%;
+        }
+    }
+}
+
+// main__services
+
+.main__services {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    @include space-between;
+
+    .main__services-text {
+        width: 55%;
+        @include text-medium;
+    }
+    
+    .main__services-list {
+        width: 35%;
+        @include space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .list {
+            list-style-type: none;
+            @include title-medium;
+            font-weight: 400;
+            color: $color-transparent;
+            line-height: 35px;
+        }
+    }
+}
+
+// main__awards
+
+.main__awards {
+    border-top: 2px solid $color-gray;
+}
+
+.main__awards-containter {
+    width: 95%;
+    padding: 4% 2%;
+    border-bottom: 2px solid $color-gray;
+    @include space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .main__awards-content {
+        width: 60%;
+        min-height: 380px;
+        @include space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .award__container {
+            width: 100%;
+            @include space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+    } 
+}
+
+.main__awards-title {
+    @include title-large;
+    padding: 0% 4% 2% 0;
+}
+
+.award-title {
+    @include title-medium;
+    padding: 0% 6% 2%;
+}
+
+.award__info {
+    max-width: 200px;
+    padding: 0% 6% 2%;
+
+    .title--small {
+        @include text-small;
+    }
+    
+    .text--small {
+        @include text-small;
+        color: $color-transparent;
+    }
+}
+

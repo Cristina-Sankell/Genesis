@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: $color-white;
+    box-sizing: border-box;
+    @include center-content;
+    font-family: $font;
+}
+
+@import 'header';
+@import 'footer';
+@import 'index-main';
+@import 'projects-main';
+@import 'contact-main';
+

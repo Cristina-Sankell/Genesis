@@ -1,0 +1,82 @@
+//main
+//project-intro
+
+.main__project-intro {
+    width: 100%;
+    padding-top: 3%;
+    @include space-between;
+    flex-wrap: wrap;
+}
+
+.project-intro__text {
+    max-width: 635px;
+    width: 100%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    
+    .main-title__container {
+        max-width: 475px;
+        width: 100%;
+        
+        .main-title--black {
+            @include text-large;
+        }
+    }
+
+    .intro__text {
+        @include text-small;
+        opacity: 0.8;
+    }
+
+}
+
+.project-intro__fact-box {
+    max-width: 340px;
+    width: 100%;
+    padding-top: 2%;
+    
+    .fact-container {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid $color-gray;
+        
+        .fact-box__title {
+            width: 60%;
+            @include title-medium;
+        }
+
+        .title--transparent {
+            width: 40%;
+            @extend .fact-box__title;
+            color: $color-transparent;
+        }
+    }
+}
+
+//images
+
+.main__project-images {
+    width: 100%;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    
+    .project-images__text {
+        padding-top: 4%;
+        @extend .intro__text;
+    }
+
+    .project-images__container {
+        width: 100%;
+        padding-top: 4%;
+        display: flex;
+        @include space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.projects__image {
+    width: 30%;
+    padding: 2% 2% 2% 0;
+}

@@ -1,0 +1,46 @@
+.footer {
+    @extend .header;
+    padding-top: 8%;
+
+    .footer__menu-container{
+        @extend .header__menu;
+    }
+}
+
+.footer__menu-content {
+    max-width: 300px;
+    @extend .header__menu;
+    flex-wrap: wrap;
+
+    .footer__links {
+        @extend .header__links;
+    }
+    
+    .footer__socials {
+        max-width: 95px;
+        @extend .header__menu;
+        padding: 0 2%;
+    }
+}
+
+.footer-logo:hover {
+    opacity: $opacity;
+    @include transition;
+}
+
+.footer__link {
+    @include title-medium;
+    text-decoration: none;
+    &:hover {
+        color: $color-transparent;
+        @include transition;
+    }
+}
+
+.icon {
+    @include title-medium;
+    &:hover {
+        color: $color-transparent;
+        @include transition;
+    }
+}

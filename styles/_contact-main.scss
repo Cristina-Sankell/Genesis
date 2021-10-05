@@ -1,0 +1,80 @@
+//main
+//contact-info
+
+.main__contact-info {
+    width: 100%;
+    padding-top: 3%;
+    @include space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info__text {
+    @extend .project-intro__text;
+    max-width: 440px;
+    padding: 2% 4% 0 0;
+}
+
+//form
+
+.contact-info__form {
+    max-width: 450px;
+    width: 100%;
+    min-height: 290px;
+    padding: 5% 4% 0 0;
+    @include space-between;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .input-field {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-gray;
+        outline: none;
+        cursor: text;
+        @include text-small;
+        font-weight: 700;
+        color: $color-black;
+
+        .input-field::placeholder {
+            color: $color-transparent;
+        }
+    }
+
+    .button {
+        width: 125px;
+        padding: 15px 0;
+        background-color: $color-blue;
+        border: none;
+        @include text-small;
+        font-weight: 700;
+        color: $color-white;
+    }
+}
+
+.input-field:hover {
+    border-color: $color-blue;
+    @include transition;
+}
+
+.input-field:focus {
+    background-color: $color-gray;
+    @include transition;
+}
+
+.button:hover {
+    color: $color-gray;
+    background-color: darken($color: $color-blue, $amount: 8);
+    @include transition;
+}
+
+//map
+
+.main__map {
+    width: 100%;
+    padding-top: 10%;
+
+    .map {
+        width: 100%;
+    }
+}
+

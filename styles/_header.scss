@@ -1,0 +1,33 @@
+.header {
+    width: 80%;
+    max-width: $content-width;
+    padding: 4% 0;
+    
+    .header__menu{
+        width: 100%;
+        @include space-between;
+        align-items: center;
+
+        .header__links {
+            max-width: 165px;
+            @extend .header__menu;
+        }
+    }
+}
+
+.header__logo:hover {
+    opacity: $opacity;
+    transform: scale(1.2);
+    @include transition;
+}
+
+.header__link {
+    @include title-medium;
+    text-decoration: none;
+    padding: 0 2%;
+
+    &:hover {
+        color: $color-blue;
+        @include transition;
+    }
+}

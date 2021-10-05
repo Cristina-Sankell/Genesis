@@ -1,0 +1,68 @@
+
+//positioning
+
+@mixin center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+//transition
+
+@mixin transition {
+    transition: 0.3s ease-in-out;
+}
+
+//text-styles
+
+@mixin title-large {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+@mixin text-large {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-black;
+}
+
+@mixin quote {
+    font-family: $font;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-transparent;
+}
+
+@mixin text-medium {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: $color-black;
+}
+
+@mixin title-medium {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-black;
+}
+
+@mixin text-small {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
